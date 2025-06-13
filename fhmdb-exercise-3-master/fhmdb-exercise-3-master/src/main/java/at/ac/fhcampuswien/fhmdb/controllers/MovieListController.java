@@ -124,14 +124,14 @@ public class MovieListController implements Initializable, Observer {
         genreComboBox.setPromptText("Filter by Genre");
 
         // Release Year
-        releaseYearComboBox.getItems().add(null);
+        releaseYearComboBox.setValue(null);
         List<Integer> years = new ArrayList<>();
         for (int y = 1900; y <= 2023; y++) years.add(y);
         releaseYearComboBox.getItems().addAll(years);
         releaseYearComboBox.setPromptText("Filter by Release Year");
 
         // Rating
-        ratingFromComboBox.getItems().add(null);
+        ratingFromComboBox.setValue(null);
         List<Integer> ratings = new ArrayList<>();
         for (int r = 0; r <= 10; r++) ratings.add(r);
         ratingFromComboBox.getItems().addAll(ratings);
